@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anleitung - Snake Game</title>
+    <link rel="stylesheet" type="text/css" href="snake.css">
+</head>
+<body>
+    <h1>Anleitung</h1>
+
+    <div class="text-section">
+        <h2>Steuerung</h2>
+        <p>Steuerung: Die Schlange kann mit den Pfeiltasten (Arrow Keys) oder den WASD-Tasten gesteuert werden. <br>
+            Die Pfeiltasten bewegen die Schlange nach oben, unten, links und rechts. <br> 
+            Während die WASD-Tasten dieselbe Funktionalität bieten.</p>
+    </div>
+
+    <div class="text-section">
+        <h2>Nahrung</h2>
+        <p>Sammeln von Nahrung: Auf dem Spielfeld wird zufällig Nahrung generiert. <br>
+        Die Schlange muss die Nahrung durch Berühren einsammeln, um zu wachsen und Punkte zu sammeln. <br>
+        Wenn die Schlange die Nahrung berührt, wird sie länger und der Punktestand erhöht sich.</p>
+    </div>
+
+    <div class="text-section">
+        <h2>GameOver</h2>
+        <p>Vermeiden von Kollisionen: Die Schlange darf nicht mit sich selbst oder den Spielfeldgrenzen kollidieren. <br>
+            Wenn die Schlange ihren eigenen Körper oder die Wände des Spielfeldes berührt, endet das Spiel.</p>
+    </div>
+
+    <div class="text-section">
+        <h2>Ziel</h2>
+        <p>Ziel des Spiels: Das Ziel des Snake Games besteht darin, so viele Punkte wie möglich zu sammeln <br>
+             Indem man die Nahrung einsammelt ohne dabei Kollisionen zu verursachen. <br>
+             Der Spieler kann versuchen, seinen eigenen Highscore zu schlagen und immer längere Schlangen zu erreichen.
+        </p>
+    </div>
+
+    <button onclick="goBackToGame()">Zurück zum Spiel</button>
+
+    <script>
+        function goBackToGame() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
